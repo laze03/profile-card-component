@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$cyan: hsl(185, 75%, 39%);
+$dark: hsl(229, 23%, 23%);
+$blue: hsl(227, 10%, 46%);
+$grey: hsl(0, 0%, 59%);
+
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $cyan;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hidden {
+  display: none
+}
+
+.top {
+  position: absolute;
+  top: -60%;
+  left: -17.5%;
+  z-index: -10;
+}
+
+.bottom {
+  position: absolute;
+  z-index: -5;
+  bottom: -85%;
+  right: -15%;
+}
+
+main {
+  background-color: white;
+  border-radius:  2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  margin: 0, 1rem;
+  box-shadow: 0 1rem 3rem rgba(#000, .25);
+}
+
+.pdp-div {
+  position: relative;
+  top: -5rem;
+  margin-bottom: -3.5rem;
+  overflow: hidden;
+
+  .pdp {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 100%;
+  }
+}
+
+h1{
+  color: $dark;
+  font-weight: 700;
+}
+
+h3, h4 {
+font-weight: 400;
+}
+
+h2 {
+  margin-top: .5rem;
+}
+
+h4 {
+  font-size: .8rem;
+  letter-spacing: .15rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .name {
+    margin-right: 1rem;
+  }
+}
+
+.city {
+  margin-bottom: 2rem;
+}
+
+.insights {
+  border-top: 1px solid $grey;
+  width: 100%;
+
+  .numbers, .categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 6rem;
+  }
+
+  .numbers {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+  }
+
+  .categories {
+    margin-bottom: 2rem;
+    margin-left: -.5rem;
+
+    .likes {
+      margin-left: -1rem;
+    }
+  }
+}
